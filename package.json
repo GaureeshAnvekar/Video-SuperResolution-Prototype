@@ -1,0 +1,22 @@
+{
+  "name": "video-superresolution-prototype",
+  "version": "1.0.0",
+  "description": "A prototype to perform SR on the backend to save storage on media on CDNs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaureeshAnvekar/Video-SuperResolution-Prototype.git"
+  },
+  "author": "Gaureesh Anvekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaureeshAnvekar/Video-SuperResolution-Prototype/issues"
+  },
+  "homepage": "https://github.com/GaureeshAnvekar/Video-SuperResolution-Prototype#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
