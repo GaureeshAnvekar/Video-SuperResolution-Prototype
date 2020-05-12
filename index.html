@@ -1,10 +1,18 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width" />
+    <!-- Shaka Player compiled library: -->
+    <script src="/shaka_player/shaka-player.compiled.js"></script>
+    <!-- Your application source: -->
+    <script src="/app.js"></script>
   </head>
   <body>
-    <video controls="" autoplay="" name="media">
-      <source src="videos/sample.mp4" type="video/mp4" />
-    </video>
+    <video
+      id="video"
+      width="640"
+      poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+      controls
+      autoplay
+    ></video>
   </body>
 </html>
