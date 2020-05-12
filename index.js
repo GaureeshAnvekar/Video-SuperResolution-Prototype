@@ -1,7 +1,8 @@
 const express = require("express");
-const app = express();
 const path = require("path");
 const router = express.Router();
+const PORT = process.env.PORT || 5000;
+const app = express();
 
 router.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
@@ -9,6 +10,10 @@ router.get("/", function (req, res) {
 });
 
 app.use("/", router);
-app.listen(process.env.port || 3000);
+app.use("/videos", express.static(path.join(__dirname, "videos")));
+app.use("/", express.static(path.join(__dirname, "")));
+app.use("/shaka_player", express.static(path.join(__dirname, "shaka_player")));
 
-console.log("Running at Port 3000");
+app.listen(PORT, function () {
+  console.log(`Express server listening on port ${PORT}`);
+});
