@@ -1,4 +1,5 @@
 const express = require("express");
+<<<<<<< HEAD
 const fs = require("fs");
 //var spawn = require("child_process").spawn;
 const path = require("path");
@@ -282,12 +283,19 @@ app.get('/videos/segments240p', function(req, res) {
 });*/
 
 var num = 0;
+=======
+const path = require("path");
+const router = express.Router();
+const PORT = process.env.PORT || 5000;
+const app = express();
+>>>>>>> 89e1649faabe9d5d0bd563e1c099033d7981e22a
 
 router.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
   //__dirname : It will resolve to your project folder.
 });
 
+<<<<<<< HEAD
 router.get("/videoRequest.js", function (req, res) {
   res.sendFile(path.join(__dirname + "/videoRequest.js"));
 });
@@ -403,3 +411,13 @@ app.listen(PORT, function () {
   console.log(`Express server listening on port ${PORT}`);
 }); 
 }
+=======
+app.use("/", router);
+app.use("/videos", express.static(path.join(__dirname, "videos")));
+app.use("/", express.static(path.join(__dirname, "")));
+app.use("/shaka_player", express.static(path.join(__dirname, "shaka_player")));
+
+app.listen(PORT, function () {
+  console.log(`Express server listening on port ${PORT}`);
+});
+>>>>>>> 89e1649faabe9d5d0bd563e1c099033d7981e22a

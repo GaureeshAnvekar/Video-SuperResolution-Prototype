@@ -1,8 +1,12 @@
 // myapp.js
 
 var manifestUri =
+<<<<<<< HEAD
  // "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd";
     "http://34.90.241.80:3000/videos/sample_dash.mpd";
+=======
+  "https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd";
+>>>>>>> 89e1649faabe9d5d0bd563e1c099033d7981e22a
 
 function initApp() {
   // Install built-in polyfills to patch browser incompatibilities.

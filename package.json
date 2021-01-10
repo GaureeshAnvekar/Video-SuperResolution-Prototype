@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/GaureeshAnvekar/Video-SuperResolution-Prototype#readme",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.17.1",
     "express-session": "^1.17.1"
+=======
+    "express": "^4.17.1"
+>>>>>>> 89e1649faabe9d5d0bd563e1c099033d7981e22a
   }
 }
