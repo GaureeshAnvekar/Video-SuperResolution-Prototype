@@ -4,3 +4,7 @@
 Upscaled video on the right hand side, done at the backend in real-time
 
 Video explanation at - https://drive.google.com/file/d/1xZYXavphKw5nIPL3X3TtBIy1inrmvepZ/view?usp=sharing
+
+
+## References
+Neural Adaptive Streaming - https://ina.kaist.ac.kr/~nas/
