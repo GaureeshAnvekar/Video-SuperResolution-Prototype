@@ -7,4 +7,4 @@ Video explanation at - https://drive.google.com/file/d/1xZYXavphKw5nIPL3X3TtBIy1
 
 
 ## References
-Neural Adaptive Streaming - https://ina.kaist.ac.kr/~nas/
+Neural Adaptive Streaming - https://web.inalab.net/~nas/
